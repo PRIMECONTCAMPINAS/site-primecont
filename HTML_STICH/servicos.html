@@ -35,6 +35,42 @@
         .tight-tracking {
             letter-spacing: -0.04em;
         }
+
+        /* Diferenciais — highlight items */
+        .diferencial-item {
+            position: relative;
+            padding: 1.25rem 1rem 1.25rem 1.25rem;
+            border-radius: 0.75rem;
+            border-left: 2px solid transparent;
+            transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .diferencial-item:hover {
+            background: rgba(16, 70, 94, 0.04);
+            border-left-color: #10465E;
+            transform: translateX(4px);
+            box-shadow: -4px 0 0 0 rgba(16,70,94,0.08);
+        }
+        .diferencial-item:hover .diferencial-icon {
+            background: #10465E;
+            color: #ffffff;
+            box-shadow: 0 0 0 4px rgba(16, 70, 94, 0.12), 0 0 20px rgba(16, 70, 94, 0.2);
+        }
+        .diferencial-item:hover .diferencial-title {
+            color: #10465E;
+            letter-spacing: -0.01em;
+        }
+        .diferencial-item:hover .diferencial-text {
+            color: #41484c;
+        }
+        .diferencial-icon {
+            transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .diferencial-title {
+            transition: color 0.3s ease, letter-spacing 0.3s ease;
+        }
+        .diferencial-text {
+            transition: color 0.3s ease;
+        }
     </style>
 <script id="tailwind-config">
         tailwind.config = {
@@ -171,11 +207,80 @@
 </div>
 <a class="text-slate-600 hover:text-cyan-900 transition-colors font-headline font-medium tracking-tight" href="contato.html">Contato</a>
 </div>
-<button class="md:hidden p-2 ml-auto text-slate-600 flex items-center justify-center">
+<button id="mobileMenuBtn" class="md:hidden p-2 ml-auto text-slate-600 flex items-center justify-center" aria-label="Abrir menu">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </nav>
+<!-- Mobile Menu Overlay -->
+<div id="mobileMenu" class="fixed inset-0 z-[99] flex flex-col pointer-events-none">
+  <div id="mobileMenuBackdrop" class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300"></div>
+  <div id="mobileMenuDrawer" class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-outline/10">
+      <img alt="PRIMECONT" class="h-8 w-auto" src="Logos/PRINCIPAL HORIZONTAL.png"/>
+      <button id="mobileMenuClose" class="p-2 text-slate-500 hover:text-slate-800 transition-colors" aria-label="Fechar menu">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col px-4 py-6 gap-1 overflow-y-auto flex-1">
+      <a href="home-page.html" class="px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">Início</a>
+      <a href="quem-somos.html" class="px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">Quem somos</a>
+      <a href="abertura-de-empresa.html" class="px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">Abrir Empresa</a>
+      <a href="servicos.html" class="px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">Serviços</a>
+      <div>
+        <button id="mobileEspBtn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">
+          Especialidades
+          <span id="mobileEspIcon" class="material-symbols-outlined text-lg transition-transform duration-200">expand_more</span>
+        </button>
+        <div id="mobileEspMenu" class="hidden flex-col pl-4 gap-1 mt-1">
+          <a href="contabilidade-eleitoral.html" class="px-4 py-2.5 rounded-lg text-slate-600 hover:bg-surface-container-low hover:text-cyan-900 font-headline text-[15px] font-medium transition-colors">Contabilidade Eleitoral</a>
+          <a href="declaracao-ir.html" class="px-4 py-2.5 rounded-lg text-slate-600 hover:bg-surface-container-low hover:text-cyan-900 font-headline text-[15px] font-medium transition-colors">Declaração de IR</a>
+          <a href="pericias.html" class="px-4 py-2.5 rounded-lg text-slate-600 hover:bg-surface-container-low hover:text-cyan-900 font-headline text-[15px] font-medium transition-colors">Perícias</a>
+          <a href="reforma-tributaria.html" class="px-4 py-2.5 rounded-lg text-slate-600 hover:bg-surface-container-low hover:text-cyan-900 font-headline text-[15px] font-medium transition-colors">Reforma Tributária</a>
+        </div>
+      </div>
+      <a href="contato.html" class="px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">Contato</a>
+    </nav>
+    <div class="px-6 py-6 border-t border-outline/10">
+      <a href="https://wa.me/551932535083?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20PRIMECONT%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-primary text-white px-6 py-3 rounded-lg font-headline font-bold tracking-wide transition-all hover:opacity-90">
+        Falar com a PRIMECONT
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  const btn = document.getElementById('mobileMenuBtn');
+  const closeBtn = document.getElementById('mobileMenuClose');
+  const menu = document.getElementById('mobileMenu');
+  const backdrop = document.getElementById('mobileMenuBackdrop');
+  const drawer = document.getElementById('mobileMenuDrawer');
+  const espBtn = document.getElementById('mobileEspBtn');
+  const espMenu = document.getElementById('mobileEspMenu');
+  const espIcon = document.getElementById('mobileEspIcon');
+  function openMenu() {
+    menu.classList.remove('pointer-events-none');
+    backdrop.classList.remove('opacity-0');
+    drawer.classList.remove('translate-x-full');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    backdrop.classList.add('opacity-0');
+    drawer.classList.add('translate-x-full');
+    document.body.style.overflow = '';
+    setTimeout(() => menu.classList.add('pointer-events-none'), 300);
+  }
+  btn.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  backdrop.addEventListener('click', closeMenu);
+  espBtn.addEventListener('click', function(){
+    const isOpen = !espMenu.classList.contains('hidden');
+    espMenu.classList.toggle('hidden');
+    espMenu.classList.toggle('flex');
+    espIcon.style.transform = isOpen ? '' : 'rotate(180deg)';
+  });
+})();
+</script>
 <main class="pt-24">
 <!-- Section 1: Hero -->
 <section class="relative overflow-hidden bg-primary-container min-h-[600px] flex items-center">
@@ -533,6 +638,58 @@ Nossa reputação é construída sobre a precisão técnica e a proximidade estr
   render();
 })();
 </script>
+</div>
+</section>
+<!-- Client Experience: Human Touch -->
+<section class="bg-white py-32 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2 relative">
+<img class="rounded-2xl whisper-shadow grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="Professional meeting in a bright minimalist office with two people conversing warmly over architectural plans and coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBspies1weoXFpe7iJnVwjvJuegISBiEVLmEK_7an0RrMVc2hPAwkDGvvYyYm4MobnEhiAHuTX39SKpCTtsMtFAq-bHJa-JpTjUFnckZeV8EqjxoIFD4kYWgd2VIwNjLmKbKLf2l9-Qmnwvl11X4fx8mLOtbV1Gq7pSVKXk-IK_QRBdPkpVMGXX7v-4lkfEflItDin9xWSYiZ8kQNuo6GMbcnykbW3s9HIOli59G1s_sw0nbTHt4kSA-BcVPgSJg2BqNj0wpH-sjYc"/>
+<div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-xl shadow-2xl transition-colors duration-300 ease-out hover:bg-white cursor-default group/clarity">
+<span class="text-white font-headline text-3xl font-bold tracking-tight transition-colors duration-300 ease-out group-hover/clarity:text-primary">Clareza e transparência</span>
+</div>
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-4xl font-headline font-bold text-primary mb-12 leading-tight">O que isso representa na prática para quem está ao nosso lado</h2>
+<div class="space-y-4">
+<div class="diferencial-item flex gap-6">
+<div class="diferencial-icon flex-shrink-0 w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<div>
+<h4 class="diferencial-title text-xl font-headline font-semibold text-primary mb-2">Facilidade</h4>
+<p class="diferencial-text text-on-surface-variant">Processos desburocratizados que liberam seu tempo para o que realmente importa: gerir seu negócio.</p>
+</div>
+</div>
+<div class="diferencial-item flex gap-6">
+<div class="diferencial-icon flex-shrink-0 w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<div>
+<h4 class="diferencial-title text-xl font-headline font-semibold text-primary mb-2">Clareza</h4>
+<p class="diferencial-text text-on-surface-variant">Relatórios inteligíveis que transformam números complexos em insights acionáveis e decisões seguras.</p>
+</div>
+</div>
+<div class="diferencial-item flex gap-6">
+<div class="diferencial-icon flex-shrink-0 w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div>
+<h4 class="diferencial-title text-xl font-headline font-semibold text-primary mb-2">Confiança</h4>
+<p class="diferencial-text text-on-surface-variant">A segurança de saber que sua contabilidade está sendo gerida por especialistas de alto nível técnico.</p>
+</div>
+</div>
+<div class="diferencial-item flex gap-6">
+<div class="diferencial-icon flex-shrink-0 w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">spa</span>
+</div>
+<div>
+<h4 class="diferencial-title text-xl font-headline font-semibold text-primary mb-2">Tranquilidade</h4>
+<p class="diferencial-text text-on-surface-variant">Conformidade total com a legislação, evitando multas e garantindo a saúde financeira perpétua.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <!-- Section 7: Integração -->
