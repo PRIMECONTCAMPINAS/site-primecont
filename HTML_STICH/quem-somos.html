@@ -137,7 +137,7 @@
 <nav class="sticky top-0 w-full z-50 bg-white shadow-sm">
 <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-2">
-<a href="home-page.html"><img alt="PRIMECONT" class="h-10 w-auto" src="Logos/PRINCIPAL HORIZONTAL.png"/></a>
+<a href="home-page.html"><img alt="PRIMECONT" class="h-10 w-auto" src="Logos/PRINCIPAL HORIZONTAL.webp"/></a>
 </div>
 <div class="hidden md:flex items-center gap-6 lg:gap-8 ml-auto">
 <a class="text-slate-600 hover:text-cyan-900 transition-colors font-headline font-medium tracking-tight" href="home-page.html">Início</a>
@@ -171,7 +171,7 @@
   <div id="mobileMenuBackdrop" class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300"></div>
   <div id="mobileMenuDrawer" class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
     <div class="flex items-center justify-between px-6 py-4 border-b border-outline/10">
-      <img alt="PRIMECONT" class="h-8 w-auto" src="Logos/PRINCIPAL HORIZONTAL.png"/>
+      <img alt="PRIMECONT" class="h-8 w-auto" src="Logos/PRINCIPAL HORIZONTAL.webp"/>
       <button id="mobileMenuClose" class="p-2 text-slate-500 hover:text-slate-800 transition-colors" aria-label="Fechar menu">
         <span class="material-symbols-outlined">close</span>
       </button>
@@ -202,39 +202,7 @@
     </div>
   </div>
 </div>
-<script>
-(function(){
-  const btn = document.getElementById('mobileMenuBtn');
-  const closeBtn = document.getElementById('mobileMenuClose');
-  const menu = document.getElementById('mobileMenu');
-  const backdrop = document.getElementById('mobileMenuBackdrop');
-  const drawer = document.getElementById('mobileMenuDrawer');
-  const espBtn = document.getElementById('mobileEspBtn');
-  const espMenu = document.getElementById('mobileEspMenu');
-  const espIcon = document.getElementById('mobileEspIcon');
-  function openMenu() {
-    menu.classList.remove('pointer-events-none');
-    backdrop.classList.remove('opacity-0');
-    drawer.classList.remove('translate-x-full');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeMenu() {
-    backdrop.classList.add('opacity-0');
-    drawer.classList.add('translate-x-full');
-    document.body.style.overflow = '';
-    setTimeout(() => menu.classList.add('pointer-events-none'), 300);
-  }
-  btn.addEventListener('click', openMenu);
-  closeBtn.addEventListener('click', closeMenu);
-  backdrop.addEventListener('click', closeMenu);
-  espBtn.addEventListener('click', function(){
-    const isOpen = !espMenu.classList.contains('hidden');
-    espMenu.classList.toggle('hidden');
-    espMenu.classList.toggle('flex');
-    espIcon.style.transform = isOpen ? '' : 'rotate(180deg)';
-  });
-})();
-</script>
+<script src="js/main.js" defer></script>
 <main class="pt-24">
 <!-- Hero Institucional -->
 <section class="max-w-7xl mx-auto px-8 py-24 md:py-32">
@@ -250,7 +218,7 @@
 </div>
 </div>
 <div class="md:col-span-5 relative aspect-[4/5] bg-surface-container-highest rounded-xl overflow-hidden whisper-shadow">
-<img alt="Architectural perspective" class="w-full h-full object-cover grayscale brightness-90 hover:scale-105 transition-transform duration-700" data-alt="Modern minimalist architectural building with sharp lines and high contrast shadows under a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClerPmMlsxE48wDI-jzvEONUzAV7P0MwxWn840_72JesET1N2PUYCfePhTk-T3rAKCS6domLhggB0-Hy3kMZIS806xEcnvAIokTOCghbNhlGILcghEl6fQ3NvJh491YH6iuRkkQqRGpeMzF1tGrVEGIABEm81Wo6_vgHyf5vrODapsZ2GRY4FAu0Ve46kds6gcNwEPPfTvPuDX8dyjtUkZdTrSu02vveUbfJJZBPduhFEkkc8TmtzlhznTCKnn_NgNICk-YmfKB1I"/>
+<img alt="Architectural perspective" class="w-full h-full object-cover grayscale brightness-90 hover:scale-105 transition-transform duration-700" data-alt="Modern minimalist architectural building with sharp lines and high contrast shadows under a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClerPmMlsxE48wDI-jzvEONUzAV7P0MwxWn840_72JesET1N2PUYCfePhTk-T3rAKCS6domLhggB0-Hy3kMZIS806xEcnvAIokTOCghbNhlGILcghEl6fQ3NvJh491YH6iuRkkQqRGpeMzF1tGrVEGIABEm81Wo6_vgHyf5vrODapsZ2GRY4FAu0Ve46kds6gcNwEPPfTvPuDX8dyjtUkZdTrSu02vveUbfJJZBPduhFEkkc8TmtzlhznTCKnn_NgNICk-YmfKB1I" loading="lazy"/>
 <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
 </div>
 </div>
@@ -260,7 +228,7 @@
 <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
 <div class="relative order-2 md:order-1">
 <div class="w-full aspect-video rounded-xl overflow-hidden bg-surface-container-highest">
-<img alt="Reunião profissional PRIMECONT" class="w-full h-full object-cover" src="Fotos_para_site/pexels-pavel-danilyuk-8112186.jpg"/>
+<img alt="Reunião profissional PRIMECONT" class="w-full h-full object-cover" src="Fotos_para_site/pexels-pavel-danilyuk-8112186.webp" loading="lazy"/>
 </div>
 <div class="absolute -bottom-12 -right-12 w-48 h-48 bg-primary-container rounded-xl flex items-center justify-center p-8 hidden md:flex">
 <div class="text-white text-center">

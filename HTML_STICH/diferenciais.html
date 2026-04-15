@@ -180,7 +180,7 @@
 <nav class="sticky top-0 w-full z-50 bg-white shadow-sm">
 <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-2">
-<a href="home-page.html"><img alt="PRIMECONT" class="h-10 w-auto" src="Logos/PRINCIPAL HORIZONTAL.png"/></a>
+<a href="home-page.html"><img alt="PRIMECONT" class="h-10 w-auto" src="Logos/PRINCIPAL HORIZONTAL.webp"/></a>
 </div>
 <div class="hidden md:flex items-center gap-6 lg:gap-8 ml-auto">
 <a class="text-slate-600 hover:text-cyan-900 transition-colors font-headline font-medium tracking-tight" href="home-page.html">Início</a>
@@ -214,7 +214,7 @@
   <div id="mobileMenuBackdrop" class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300"></div>
   <div id="mobileMenuDrawer" class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
     <div class="flex items-center justify-between px-6 py-4 border-b border-outline/10">
-      <img alt="PRIMECONT" class="h-8 w-auto" src="Logos/PRINCIPAL HORIZONTAL.png"/>
+      <img alt="PRIMECONT" class="h-8 w-auto" src="Logos/PRINCIPAL HORIZONTAL.webp"/>
       <button id="mobileMenuClose" class="p-2 text-slate-500 hover:text-slate-800 transition-colors" aria-label="Fechar menu">
         <span class="material-symbols-outlined">close</span>
       </button>
@@ -245,44 +245,12 @@
     </div>
   </div>
 </div>
-<script>
-(function(){
-  const btn = document.getElementById('mobileMenuBtn');
-  const closeBtn = document.getElementById('mobileMenuClose');
-  const menu = document.getElementById('mobileMenu');
-  const backdrop = document.getElementById('mobileMenuBackdrop');
-  const drawer = document.getElementById('mobileMenuDrawer');
-  const espBtn = document.getElementById('mobileEspBtn');
-  const espMenu = document.getElementById('mobileEspMenu');
-  const espIcon = document.getElementById('mobileEspIcon');
-  function openMenu() {
-    menu.classList.remove('pointer-events-none');
-    backdrop.classList.remove('opacity-0');
-    drawer.classList.remove('translate-x-full');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeMenu() {
-    backdrop.classList.add('opacity-0');
-    drawer.classList.add('translate-x-full');
-    document.body.style.overflow = '';
-    setTimeout(() => menu.classList.add('pointer-events-none'), 300);
-  }
-  btn.addEventListener('click', openMenu);
-  closeBtn.addEventListener('click', closeMenu);
-  backdrop.addEventListener('click', closeMenu);
-  espBtn.addEventListener('click', function(){
-    const isOpen = !espMenu.classList.contains('hidden');
-    espMenu.classList.toggle('hidden');
-    espMenu.classList.toggle('flex');
-    espIcon.style.transform = isOpen ? '' : 'rotate(180deg)';
-  });
-})();
-</script>
+<script src="js/main.js" defer></script>
 <main class="pt-0">
 <!-- Hero Section: Clifford Chance Style -->
 <section class="relative min-h-[716px] flex items-center overflow-hidden bg-primary overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-30 grayscale mix-blend-overlay" data-alt="Modern minimalist architectural glass building interior with clean lines and soft natural daylighting reflecting on polished floors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnUv7l-zv91GZwonDgKSq9WWWVd_urWW_DJU9jnVhbhBD36rbh2-jDT-KGTkKzwEYp2yo_WYhr9UUGdD7x3UzxoQYwu9vfXi6epIKFtbnxwNyhjx73rasNs9o3aD3HZFTCrp_vdaNAEeoyxEtTCXLHDd3z5DV_9WZqW04ELVV-A4rmbV_aaKfin-m-96xncS-BKBlcW4tj8f1SaOWg0jiTzFzNssy5nyjaV-M3XrZAXWV7eJNoq914TbkghWSFhaE8Pafpc8H-pws"/>
+<img class="w-full h-full object-cover opacity-30 grayscale mix-blend-overlay" data-alt="Modern minimalist architectural glass building interior with clean lines and soft natural daylighting reflecting on polished floors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnUv7l-zv91GZwonDgKSq9WWWVd_urWW_DJU9jnVhbhBD36rbh2-jDT-KGTkKzwEYp2yo_WYhr9UUGdD7x3UzxoQYwu9vfXi6epIKFtbnxwNyhjx73rasNs9o3aD3HZFTCrp_vdaNAEeoyxEtTCXLHDd3z5DV_9WZqW04ELVV-A4rmbV_aaKfin-m-96xncS-BKBlcW4tj8f1SaOWg0jiTzFzNssy5nyjaV-M3XrZAXWV7eJNoq914TbkghWSFhaE8Pafpc8H-pws" loading="lazy"/>
 <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-transparent"></div>
 </div>
 <div class="relative z-10 max-w-7xl mx-auto px-8 py-24">
@@ -463,7 +431,7 @@
 <section class="bg-white py-32 px-8 overflow-hidden">
 <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
 <div class="lg:w-1/2 relative">
-<img class="rounded-2xl whisper-shadow grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="Professional meeting in a bright minimalist office with two people conversing warmly over architectural plans and coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBspies1weoXFpe7iJnVwjvJuegISBiEVLmEK_7an0RrMVc2hPAwkDGvvYyYm4MobnEhiAHuTX39SKpCTtsMtFAq-bHJa-JpTjUFnckZeV8EqjxoIFD4kYWgd2VIwNjLmKbKLf2l9-Qmnwvl11X4fx8mLOtbV1Gq7pSVKXk-IK_QRBdPkpVMGXX7v-4lkfEflItDin9xWSYiZ8kQNuo6GMbcnykbW3s9HIOli59G1s_sw0nbTHt4kSA-BcVPgSJg2BqNj0wpH-sjYc"/>
+<img class="rounded-2xl whisper-shadow grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="Professional meeting in a bright minimalist office with two people conversing warmly over architectural plans and coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBspies1weoXFpe7iJnVwjvJuegISBiEVLmEK_7an0RrMVc2hPAwkDGvvYyYm4MobnEhiAHuTX39SKpCTtsMtFAq-bHJa-JpTjUFnckZeV8EqjxoIFD4kYWgd2VIwNjLmKbKLf2l9-Qmnwvl11X4fx8mLOtbV1Gq7pSVKXk-IK_QRBdPkpVMGXX7v-4lkfEflItDin9xWSYiZ8kQNuo6GMbcnykbW3s9HIOli59G1s_sw0nbTHt4kSA-BcVPgSJg2BqNj0wpH-sjYc" loading="lazy"/>
 <div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-xl shadow-2xl transition-colors duration-300 ease-out hover:bg-white cursor-default group/clarity">
 <span class="text-white font-headline text-3xl font-bold tracking-tight transition-colors duration-300 ease-out group-hover/clarity:text-primary">Clareza e transparência</span>
 </div>

@@ -140,7 +140,7 @@
 <nav class="sticky top-0 w-full z-50 bg-white shadow-sm">
 <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-2">
-<a href="home-page.html"><img alt="PRIMECONT" class="h-10 w-auto" src="Logos/PRINCIPAL HORIZONTAL.png"/></a>
+<a href="home-page.html"><img alt="PRIMECONT" class="h-10 w-auto" src="Logos/PRINCIPAL HORIZONTAL.webp"/></a>
 </div>
 <div class="hidden md:flex items-center gap-6 lg:gap-8 ml-auto">
 <a class="text-slate-600 hover:text-cyan-900 transition-colors font-headline font-medium tracking-tight" href="home-page.html">Início</a>
@@ -177,7 +177,7 @@
   <div id="mobileMenuDrawer" class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
     <!-- Header -->
     <div class="flex items-center justify-between px-6 py-4 border-b border-outline/10">
-      <img alt="PRIMECONT" class="h-8 w-auto" src="Logos/PRINCIPAL HORIZONTAL.png"/>
+      <img alt="PRIMECONT" class="h-8 w-auto" src="Logos/PRINCIPAL HORIZONTAL.webp"/>
       <button id="mobileMenuClose" class="p-2 text-slate-500 hover:text-slate-800 transition-colors" aria-label="Fechar menu">
         <span class="material-symbols-outlined">close</span>
       </button>
@@ -211,42 +211,7 @@
     </div>
   </div>
 </div>
-<script>
-(function(){
-  const btn = document.getElementById('mobileMenuBtn');
-  const closeBtn = document.getElementById('mobileMenuClose');
-  const menu = document.getElementById('mobileMenu');
-  const backdrop = document.getElementById('mobileMenuBackdrop');
-  const drawer = document.getElementById('mobileMenuDrawer');
-  const espBtn = document.getElementById('mobileEspBtn');
-  const espMenu = document.getElementById('mobileEspMenu');
-  const espIcon = document.getElementById('mobileEspIcon');
-
-  function openMenu() {
-    menu.classList.remove('pointer-events-none');
-    backdrop.classList.remove('opacity-0');
-    drawer.classList.remove('translate-x-full');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeMenu() {
-    backdrop.classList.add('opacity-0');
-    drawer.classList.add('translate-x-full');
-    document.body.style.overflow = '';
-    setTimeout(() => menu.classList.add('pointer-events-none'), 300);
-  }
-
-  btn.addEventListener('click', openMenu);
-  closeBtn.addEventListener('click', closeMenu);
-  backdrop.addEventListener('click', closeMenu);
-
-  espBtn.addEventListener('click', function(){
-    const isOpen = !espMenu.classList.contains('hidden');
-    espMenu.classList.toggle('hidden');
-    espMenu.classList.toggle('flex');
-    espIcon.style.transform = isOpen ? '' : 'rotate(180deg)';
-  });
-})();
-</script>
+<script src="js/main.js" defer></script>
 <!-- Hero Section -->
 <section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface-container-lowest">
 <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 py-20">
@@ -273,7 +238,7 @@
 </div>
 <div class="lg:col-span-5 relative flex items-center">
 <div class="aspect-[4/5] w-full rounded-2xl overflow-hidden shadow-2xl relative">
-<img class="w-full h-full object-cover object-top" alt="PRIMECONT" src="Fotos_para_site/Gemini_Generated_Image_v1yttcv1yttcv1yt.png"/>
+<img class="w-full h-full object-cover object-top" alt="PRIMECONT" src="Fotos_para_site/Gemini_Generated_Image_v1yttcv1yttcv1yt.webp" loading="lazy"/>
 <div class="absolute inset-0 bg-gradient-to-tr from-primary/40 to-transparent"></div>
 </div>
 <!-- Floating Decorative Element -->
@@ -477,7 +442,7 @@
 </div>
 </div>
 <div class="relative">
-<img class="rounded-2xl opacity-80" alt="Representação visual de organização e clareza estrutural" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0x_WfqQi1inIAX17Fl2jq2bRraSzgkpPM7B8f_DrCl-mwO78RRIHjnAVsKKi6_Pn9Dg6zK5Vtfs80b0ojMuV437ZZVzsSa34D9eDjH-95poLHzgieItY6objenzogy8cpTALy0GGZ_tZLC6tiwnq2K4J-Sxf6a_PVvEqNr_9ofxOvfoPwttAggGbKUg_TrbE9_VEfxPavw-xxVGyC6t9KSQqaqKisZyEkWbylVPU1pGd5Dzs6LjB80fF5XPoGJ_BgzvK3VyWuaVw"/>
+<img class="rounded-2xl opacity-80" alt="Representação visual de organização e clareza estrutural" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0x_WfqQi1inIAX17Fl2jq2bRraSzgkpPM7B8f_DrCl-mwO78RRIHjnAVsKKi6_Pn9Dg6zK5Vtfs80b0ojMuV437ZZVzsSa34D9eDjH-95poLHzgieItY6objenzogy8cpTALy0GGZ_tZLC6tiwnq2K4J-Sxf6a_PVvEqNr_9ofxOvfoPwttAggGbKUg_TrbE9_VEfxPavw-xxVGyC6t9KSQqaqKisZyEkWbylVPU1pGd5Dzs6LjB80fF5XPoGJ_BgzvK3VyWuaVw" loading="lazy"/>
 <div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-fixed-dim/20 rounded-full blur-3xl"></div>
 </div>
 </div>
@@ -491,19 +456,19 @@
     <div class="partners-track-wrapper">
       <div class="partners-track">
         <div class="partners-list" id="partnersList">
-          <div class="partner-item"><img src="logos/logo-omie-institucional.png" alt="Omie"/></div>
-          <div class="partner-item"><img src="logos/jettax-azul-PNG-1024x206.webp" alt="Jettax"/></div>
-          <div class="partner-item partner-item--compact"><img src="logos/iungo-case-de-sucesso-de-vendas-crm-piperun.webp" alt="Iungo"/></div>
-          <div class="partner-item partner-item--dorpa"><img src="logos/07bea745-cb95-46c2-92f4-86d259d2baad.png" alt="Dorpa"/></div>
-          <div class="partner-item partner-item--compact"><img src="logos/image.png" alt="SCI"/></div>
-          <div class="partner-item partner-item--compact"><img src="logos/image (1).png" alt="M365"/></div>
+          <div class="partner-item"><img src="logos/logo-omie-institucional.png" alt="Omie" loading="lazy"/></div>
+          <div class="partner-item"><img src="logos/jettax-azul-PNG-1024x206.webp" alt="Jettax" loading="lazy"/></div>
+          <div class="partner-item partner-item--compact"><img src="logos/iungo-case-de-sucesso-de-vendas-crm-piperun.webp" alt="Iungo" loading="lazy"/></div>
+          <div class="partner-item partner-item--dorpa"><img src="logos/07bea745-cb95-46c2-92f4-86d259d2baad.webp" alt="Dorpa" loading="lazy"/></div>
+          <div class="partner-item partner-item--compact"><img src="logos/image.webp" alt="SCI" loading="lazy"/></div>
+          <div class="partner-item partner-item--compact"><img src="logos/image (1).webp" alt="M365" loading="lazy"/></div>
           <!-- duplicado para loop contínuo -->
-          <div class="partner-item"><img src="logos/logo-omie-institucional.png" alt="Omie"/></div>
-          <div class="partner-item"><img src="logos/jettax-azul-PNG-1024x206.webp" alt="Jettax"/></div>
-          <div class="partner-item partner-item--compact"><img src="logos/iungo-case-de-sucesso-de-vendas-crm-piperun.webp" alt="Iungo"/></div>
-          <div class="partner-item partner-item--dorpa"><img src="logos/07bea745-cb95-46c2-92f4-86d259d2baad.png" alt="Dorpa"/></div>
-          <div class="partner-item partner-item--compact"><img src="logos/image.png" alt="SCI"/></div>
-          <div class="partner-item partner-item--compact"><img src="logos/image (1).png" alt="M365"/></div>
+          <div class="partner-item"><img src="logos/logo-omie-institucional.png" alt="Omie" loading="lazy"/></div>
+          <div class="partner-item"><img src="logos/jettax-azul-PNG-1024x206.webp" alt="Jettax" loading="lazy"/></div>
+          <div class="partner-item partner-item--compact"><img src="logos/iungo-case-de-sucesso-de-vendas-crm-piperun.webp" alt="Iungo" loading="lazy"/></div>
+          <div class="partner-item partner-item--dorpa"><img src="logos/07bea745-cb95-46c2-92f4-86d259d2baad.webp" alt="Dorpa" loading="lazy"/></div>
+          <div class="partner-item partner-item--compact"><img src="logos/image.webp" alt="SCI" loading="lazy"/></div>
+          <div class="partner-item partner-item--compact"><img src="logos/image (1).webp" alt="M365" loading="lazy"/></div>
         </div>
       </div>
     </div>
