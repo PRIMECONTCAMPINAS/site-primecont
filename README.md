@@ -12,7 +12,7 @@ Para continuar trabalhando neste projeto em outra máquina, siga os passos abaix
 2. Copie o comando abaixo, cole no seu terminal e aperte `Enter`:
 
 ```bash
-git clone https://github.com/boliviamagic/site-primecont.git
+git clone https://github.com/gustavoalves-ia/site-primecont.git
 ```
 
 3. Uma nova pasta chamada `site-primecont` será criada com todos os arquivos atualizados.
