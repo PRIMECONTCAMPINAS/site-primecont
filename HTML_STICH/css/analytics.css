@@ -1,0 +1,7 @@
+.pc-medicao[hidden]{display:none!important}
+.pc-medicao{position:fixed;bottom:0;left:0;right:0;z-index:10001;background:#fff;color:#183044;border-top:1px solid #d5e1e8;box-shadow:0 -4px 24px #102a4318;padding:18px 24px;display:flex;gap:24px;align-items:center;justify-content:space-between;font:14px/1.5 Arial,sans-serif;max-height:70vh;overflow:auto}
+.pc-medicao strong{font-size:16px}.pc-medicao p{margin:4px 0 0;max-width:780px}.pc-medicao a{text-decoration:underline;color:#164e63}
+.pc-medicao-acoes{display:flex;gap:10px;flex-shrink:0}.pc-medicao button{padding:10px 16px;border:1px solid #164e63;border-radius:8px;background:white;color:#164e63;font:600 14px Arial,sans-serif;cursor:pointer;min-height:44px}
+.pc-medicao button:hover{background:#edf5f7}.pc-medicao button:focus-visible,.pc-medicao a:focus-visible,.pc-medicao-preferencias:focus-visible{outline:3px solid #087ca2;outline-offset:3px}
+.pc-medicao-rodape{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:18px 24px;color:inherit;font:13px/1.5 Arial,sans-serif}.pc-medicao-rodape a{text-decoration:underline}.pc-medicao-preferencias{font:inherit;color:inherit;background:none;border:0;text-decoration:underline;cursor:pointer;padding:0}
+@media(max-width:767px){.pc-medicao{padding:14px 16px;display:block}.pc-medicao-acoes{margin-top:12px;flex-wrap:wrap}.pc-medicao-acoes button{flex:1}}
