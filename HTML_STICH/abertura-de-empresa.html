@@ -16,78 +16,89 @@
 <meta property="og:image:width" content="1080"/>
 <meta property="og:image:height" content="1080"/>
 <meta property="og:image:alt" content="PRIMECONT Contabilidade e Perícias"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&amp;family=Work+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;icon_names=account_balance,call,close,edit_square,expand_more,gavel,location_on,mail,menu,rocket_launch,verified&amp;display=block" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                "inverse-surface": "#2e3132",
-                "surface-dim": "#d9dadb",
-                "secondary-container": "#b7ebfa",
-                "tertiary-fixed": "#cde6f6",
-                "surface-container-high": "#e7e8e9",
-                "on-tertiary-fixed": "#041e2a",
-                "error-container": "#ffdad6",
-                "surface-container-low": "#f3f4f5",
-                "on-secondary-container": "#386b78",
-                "secondary": "#326572",
-                "on-tertiary-container": "#99b1c0",
-                "surface-bright": "#f8f9fa",
-                "on-surface": "#191c1d",
-                "tertiary-container": "#2d4451",
-                "inverse-primary": "#9ecde9",
-                "tertiary-fixed-dim": "#b2cada",
-                "surface": "#f8f9fa",
-                "on-tertiary": "#ffffff",
-                "on-secondary": "#ffffff",
-                "surface-container-highest": "#e1e3e4",
-                "primary-fixed-dim": "#9ecde9",
-                "background": "#f8f9fa",
-                "surface-tint": "#34647d",
-                "on-tertiary-fixed-variant": "#334a57",
-                "on-error": "#ffffff",
-                "secondary-fixed-dim": "#9bcfdd",
-                "on-surface-variant": "#41484c",
-                "on-secondary-fixed-variant": "#154d5a",
-                "on-primary-fixed": "#001e2c",
-                "surface-container": "#edeeef",
-                "on-error-container": "#93000a",
-                "surface-container-lowest": "#ffffff",
-                "on-primary": "#ffffff",
-                "on-primary-fixed-variant": "#184c64",
-                "tertiary": "#162e3a",
-                "primary-fixed": "#c4e7ff",
-                "on-secondary-fixed": "#001f26",
-                "outline-variant": "#c1c7cd",
-                "surface-variant": "#e1e3e4",
-                "primary": "#002f42",
-                "outline": "#71787d",
-                "inverse-on-surface": "#f0f1f2",
-                "primary-container": "#10465e",
-                "secondary-fixed": "#b7ebfa",
-                "on-primary-container": "#85b3cf",
-                "error": "#ba1a1a",
-                "on-background": "#191c1d"
-            },
-            "borderRadius": {
-                "DEFAULT": "0.125rem",
-                "lg": "0.25rem",
-                "xl": "0.5rem",
-                "full": "0.75rem"
-            },
-            "fontFamily": {
-                "headline": ["Outfit", "sans-serif"],
-                "body": ["Work Sans", "sans-serif"],
-                "label": ["Work Sans", "sans-serif"]
-            }
-          },
-        },
+<script id="tailwind-config" type="application/json">
+{
+  "darkMode": "class",
+  "theme": {
+    "extend": {
+      "colors": {
+        "inverse-surface": "#2e3132",
+        "surface-dim": "#d9dadb",
+        "secondary-container": "#b7ebfa",
+        "tertiary-fixed": "#cde6f6",
+        "surface-container-high": "#e7e8e9",
+        "on-tertiary-fixed": "#041e2a",
+        "error-container": "#ffdad6",
+        "surface-container-low": "#f3f4f5",
+        "on-secondary-container": "#386b78",
+        "secondary": "#326572",
+        "on-tertiary-container": "#99b1c0",
+        "surface-bright": "#f8f9fa",
+        "on-surface": "#191c1d",
+        "tertiary-container": "#2d4451",
+        "inverse-primary": "#9ecde9",
+        "tertiary-fixed-dim": "#b2cada",
+        "surface": "#f8f9fa",
+        "on-tertiary": "#ffffff",
+        "on-secondary": "#ffffff",
+        "surface-container-highest": "#e1e3e4",
+        "primary-fixed-dim": "#9ecde9",
+        "background": "#f8f9fa",
+        "surface-tint": "#34647d",
+        "on-tertiary-fixed-variant": "#334a57",
+        "on-error": "#ffffff",
+        "secondary-fixed-dim": "#9bcfdd",
+        "on-surface-variant": "#41484c",
+        "on-secondary-fixed-variant": "#154d5a",
+        "on-primary-fixed": "#001e2c",
+        "surface-container": "#edeeef",
+        "on-error-container": "#93000a",
+        "surface-container-lowest": "#ffffff",
+        "on-primary": "#ffffff",
+        "on-primary-fixed-variant": "#184c64",
+        "tertiary": "#162e3a",
+        "primary-fixed": "#c4e7ff",
+        "on-secondary-fixed": "#001f26",
+        "outline-variant": "#c1c7cd",
+        "surface-variant": "#e1e3e4",
+        "primary": "#002f42",
+        "outline": "#71787d",
+        "inverse-on-surface": "#f0f1f2",
+        "primary-container": "#10465e",
+        "secondary-fixed": "#b7ebfa",
+        "on-primary-container": "#85b3cf",
+        "error": "#ba1a1a",
+        "on-background": "#191c1d"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "fontFamily": {
+        "headline": [
+          "Outfit",
+          "sans-serif"
+        ],
+        "body": [
+          "Work Sans",
+          "sans-serif"
+        ],
+        "label": [
+          "Work Sans",
+          "sans-serif"
+        ]
       }
-    </script>
+    }
+  }
+}
+</script>
 <style>
       .material-symbols-outlined {
         font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -150,6 +161,7 @@
 </script>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="apple-touch-icon" href="favicon.png"/>
+<link rel="stylesheet" href="css/abertura-de-empresa.css?v=20261005-performance"/>
 </head>
 <body class="bg-surface text-on-surface font-body antialiased">
 <!-- TopNavBar -->
@@ -157,7 +169,7 @@
 <nav class="sticky top-0 w-full z-50 bg-white shadow-sm">
 <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-2">
-<a href="./"><img alt="PRIMECONT" class="h-10 w-auto" src="logos/PRINCIPAL HORIZONTAL.webp"/></a>
+<a href="./"><img alt="PRIMECONT" class="h-10 w-auto" src="logos/PRINCIPAL HORIZONTAL.webp" srcset="imagens/logo-primecont-640.webp 640w" sizes="200px" width="2894" height="582"/></a>
 </div>
 <div class="hidden md:flex items-center gap-6 lg:gap-8 ml-auto">
 <a class="text-slate-600 hover:text-cyan-900 transition-colors font-headline font-medium tracking-tight" href="./">Início</a>
@@ -191,7 +203,7 @@
   <div id="mobileMenuBackdrop" class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300"></div>
   <div id="mobileMenuDrawer" role="dialog" aria-modal="true" aria-label="Navegação do site" class="overflow-y-auto absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
     <div class="flex items-center justify-between px-6 py-4 border-b border-outline/10">
-      <img alt="PRIMECONT" class="h-8 w-auto" src="logos/PRINCIPAL HORIZONTAL.webp"/>
+      <img alt="PRIMECONT" class="h-8 w-auto" src="logos/PRINCIPAL HORIZONTAL.webp" srcset="imagens/logo-primecont-640.webp 640w" sizes="200px" width="2894" height="582"/>
       <button id="mobileMenuClose" class="p-2 text-slate-500 hover:text-slate-800 transition-colors" aria-label="Fechar menu">
         <span class="material-symbols-outlined">close</span>
       </button>
@@ -249,7 +261,7 @@
 <div class="relative w-full aspect-square max-w-md">
 <div class="absolute inset-0 bg-white/5 backdrop-blur-3xl rounded-[2rem] transform rotate-6 scale-95 border border-white/10"></div>
 <div class="absolute inset-0 bg-white/10 backdrop-blur-2xl rounded-[2rem] border border-white/20">
-<img class="w-full h-full object-cover object-top rounded-[2rem] mix-blend-overlay opacity-60" alt="Abertura de empresa PRIMECONT" src="Fotos_para_site/abertura.webp" loading="lazy"/>
+<img class="w-full h-full object-cover object-top rounded-[2rem] mix-blend-overlay opacity-60" alt="Abertura de empresa PRIMECONT" src="imagens/hero-abertura-768.webp" width="768" height="1408" loading="lazy"/>
 </div>
 </div>
 </div>

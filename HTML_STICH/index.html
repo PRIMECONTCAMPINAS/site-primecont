@@ -16,79 +16,90 @@
 <meta property="og:image:width" content="1080"/>
 <meta property="og:image:height" content="1080"/>
 <meta property="og:image:alt" content="PRIMECONT Contabilidade e Perícias"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Work+Sans:wght@300;400;500&amp;family=Geist:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;icon_names=account_balance,assignment_turned_in,business,calculate,calendar_today,call,chat_bubble,close,domain_add,expand_more,gavel,grid_view,groups,handshake,how_to_vote,location_on,mail,menu,payments,trending_up,verified_user&amp;display=block" rel="stylesheet"/>
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-container": "#edeeef",
-                    "secondary-fixed-dim": "#9bcfdd",
-                    "error-container": "#ffdad6",
-                    "inverse-surface": "#2e3132",
-                    "secondary-fixed": "#b7ebfa",
-                    "on-error": "#ffffff",
-                    "error": "#ba1a1a",
-                    "surface-container-low": "#f3f4f5",
-                    "primary-container": "#10465e",
-                    "on-secondary": "#ffffff",
-                    "on-primary-fixed-variant": "#184c64",
-                    "on-tertiary-fixed-variant": "#334a57",
-                    "on-surface": "#191c1d",
-                    "background": "#f8f9fa",
-                    "on-tertiary-fixed": "#041e2a",
-                    "inverse-on-surface": "#f0f1f2",
-                    "primary": "#002f42",
-                    "tertiary-fixed-dim": "#b2cada",
-                    "tertiary": "#162e3a",
-                    "outline": "#71787d",
-                    "surface-tint": "#34647d",
-                    "surface": "#f8f9fa",
-                    "surface-variant": "#e1e3e4",
-                    "primary-fixed": "#c4e7ff",
-                    "inverse-primary": "#9ecde9",
-                    "outline-variant": "#c1c7cd",
-                    "surface-container-highest": "#e1e3e4",
-                    "on-secondary-fixed": "#001f26",
-                    "on-tertiary-container": "#99b1c0",
-                    "on-primary-container": "#85b3cf",
-                    "surface-dim": "#d9dadb",
-                    "on-secondary-container": "#386b78",
-                    "surface-container-high": "#e7e8e9",
-                    "on-error-container": "#93000a",
-                    "surface-container-lowest": "#ffffff",
-                    "on-surface-variant": "#41484c",
-                    "on-secondary-fixed-variant": "#154d5a",
-                    "on-primary": "#ffffff",
-                    "tertiary-container": "#2d4451",
-                    "on-primary-fixed": "#001e2c",
-                    "secondary-container": "#b7ebfa",
-                    "on-tertiary": "#ffffff",
-                    "on-background": "#191c1d",
-                    "secondary": "#326572",
-                    "primary-fixed-dim": "#9ecde9",
-                    "tertiary-fixed": "#cde6f6",
-                    "surface-bright": "#f8f9fa"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Outfit", "sans-serif"],
-                    "body": ["Geist", "sans-serif"],
-                    "label": ["Geist", "sans-serif"]
-            }
-          },
-        },
+
+<script id="tailwind-config" type="application/json">
+{
+  "darkMode": "class",
+  "theme": {
+    "extend": {
+      "colors": {
+        "surface-container": "#edeeef",
+        "secondary-fixed-dim": "#9bcfdd",
+        "error-container": "#ffdad6",
+        "inverse-surface": "#2e3132",
+        "secondary-fixed": "#b7ebfa",
+        "on-error": "#ffffff",
+        "error": "#ba1a1a",
+        "surface-container-low": "#f3f4f5",
+        "primary-container": "#10465e",
+        "on-secondary": "#ffffff",
+        "on-primary-fixed-variant": "#184c64",
+        "on-tertiary-fixed-variant": "#334a57",
+        "on-surface": "#191c1d",
+        "background": "#f8f9fa",
+        "on-tertiary-fixed": "#041e2a",
+        "inverse-on-surface": "#f0f1f2",
+        "primary": "#002f42",
+        "tertiary-fixed-dim": "#b2cada",
+        "tertiary": "#162e3a",
+        "outline": "#71787d",
+        "surface-tint": "#34647d",
+        "surface": "#f8f9fa",
+        "surface-variant": "#e1e3e4",
+        "primary-fixed": "#c4e7ff",
+        "inverse-primary": "#9ecde9",
+        "outline-variant": "#c1c7cd",
+        "surface-container-highest": "#e1e3e4",
+        "on-secondary-fixed": "#001f26",
+        "on-tertiary-container": "#99b1c0",
+        "on-primary-container": "#85b3cf",
+        "surface-dim": "#d9dadb",
+        "on-secondary-container": "#386b78",
+        "surface-container-high": "#e7e8e9",
+        "on-error-container": "#93000a",
+        "surface-container-lowest": "#ffffff",
+        "on-surface-variant": "#41484c",
+        "on-secondary-fixed-variant": "#154d5a",
+        "on-primary": "#ffffff",
+        "tertiary-container": "#2d4451",
+        "on-primary-fixed": "#001e2c",
+        "secondary-container": "#b7ebfa",
+        "on-tertiary": "#ffffff",
+        "on-background": "#191c1d",
+        "secondary": "#326572",
+        "primary-fixed-dim": "#9ecde9",
+        "tertiary-fixed": "#cde6f6",
+        "surface-bright": "#f8f9fa"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "fontFamily": {
+        "headline": [
+          "Outfit",
+          "sans-serif"
+        ],
+        "body": [
+          "Geist",
+          "sans-serif"
+        ],
+        "label": [
+          "Geist",
+          "sans-serif"
+        ]
       }
-    </script>
+    }
+  }
+}
+</script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -136,13 +147,14 @@
 </script>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="apple-touch-icon" href="favicon.png"/>
+<link rel="stylesheet" href="css/index.css?v=20261005-performance"/>
 </head>
 <body class="bg-surface-container-low font-body text-on-surface selection:bg-primary-container selection:text-white">
 <!-- Top Navigation -->
 <nav class="sticky top-0 w-full z-50 bg-white shadow-sm">
 <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-2">
-<a href="./"><img alt="PRIMECONT" class="h-10 w-auto" src="logos/PRINCIPAL HORIZONTAL.webp"/></a>
+<a href="./"><img alt="PRIMECONT" class="h-10 w-auto" src="logos/PRINCIPAL HORIZONTAL.webp" srcset="imagens/logo-primecont-640.webp 640w" sizes="200px" width="2894" height="582"/></a>
 </div>
 <div class="hidden md:flex items-center gap-6 lg:gap-8 ml-auto">
 <a class="text-slate-600 hover:text-cyan-900 transition-colors font-headline font-medium tracking-tight" href="./">Início</a>
@@ -179,7 +191,7 @@
   <div id="mobileMenuDrawer" role="dialog" aria-modal="true" aria-label="Navegação do site" class="overflow-y-auto absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
     <!-- Header -->
     <div class="flex items-center justify-between px-6 py-4 border-b border-outline/10">
-      <img alt="PRIMECONT" class="h-8 w-auto" src="logos/PRINCIPAL HORIZONTAL.webp"/>
+      <img alt="PRIMECONT" class="h-8 w-auto" src="logos/PRINCIPAL HORIZONTAL.webp" srcset="imagens/logo-primecont-640.webp 640w" sizes="200px" width="2894" height="582"/>
       <button id="mobileMenuClose" class="p-2 text-slate-500 hover:text-slate-800 transition-colors" aria-label="Fechar menu">
         <span class="material-symbols-outlined">close</span>
       </button>
@@ -241,7 +253,7 @@
 </div>
 <div class="lg:col-span-5 relative flex items-center">
 <div class="aspect-[4/5] w-full rounded-2xl overflow-hidden shadow-2xl relative">
-<img class="w-full h-full object-cover object-top" alt="Ilustração conceitual da PRIMECONT" src="Fotos_para_site/Gemini_Generated_Image_v1yttcv1yttcv1yt.webp" loading="lazy"/>
+<img class="w-full h-full object-cover object-top" alt="Ilustração conceitual da PRIMECONT" src="imagens/hero-home-960.webp" srcset="imagens/hero-home-480.webp 480w, imagens/hero-home-960.webp 960w, imagens/hero-home-1440.webp 1440w" sizes="(min-width: 1280px) 480px, (min-width: 1024px) 42vw, calc(100vw - 48px)" width="1536" height="2816" loading="lazy"/>
 <div class="absolute inset-0 bg-gradient-to-tr from-primary/40 to-transparent"></div>
 </div>
 <!-- Floating Decorative Element -->
@@ -459,14 +471,14 @@
     <div class="partners-track-wrapper">
       <div class="partners-track">
         <div class="partners-list" id="partnersList">
-          <div class="partner-item"><img src="logos/logo-omie-institucional.png" alt="Omie" loading="lazy"/></div>
+          <div class="partner-item"><img src="imagens/logo-omie-640.webp" width="640" height="195" alt="Omie" loading="lazy"/></div>
           <div class="partner-item"><img src="logos/jettax-azul-PNG-1024x206.webp" alt="Jettax" loading="lazy"/></div>
           <div class="partner-item partner-item--compact"><img src="logos/iungo-case-de-sucesso-de-vendas-crm-piperun.webp" alt="Iungo" loading="lazy"/></div>
           <div class="partner-item partner-item--dorpa"><img src="logos/logo-dorpa.webp" alt="Dorpa" loading="lazy"/></div>
           <div class="partner-item partner-item--compact"><img src="logos/logo-sci.webp" alt="SCI" loading="lazy"/></div>
           <div class="partner-item partner-item--compact"><img src="logos/logo-m365.webp" alt="M365" loading="lazy"/></div>
           <!-- duplicado para loop contínuo -->
-          <div class="partner-item"><img src="logos/logo-omie-institucional.png" alt="Omie" loading="lazy"/></div>
+          <div class="partner-item"><img src="imagens/logo-omie-640.webp" width="640" height="195" alt="Omie" loading="lazy"/></div>
           <div class="partner-item"><img src="logos/jettax-azul-PNG-1024x206.webp" alt="Jettax" loading="lazy"/></div>
           <div class="partner-item partner-item--compact"><img src="logos/iungo-case-de-sucesso-de-vendas-crm-piperun.webp" alt="Iungo" loading="lazy"/></div>
           <div class="partner-item partner-item--dorpa"><img src="logos/logo-dorpa.webp" alt="Dorpa" loading="lazy"/></div>
@@ -510,7 +522,9 @@
     gap: 64px;
     width: max-content;
     animation: partnersScroll 30s linear infinite;
+    animation-play-state: paused;
   }
+  .partners-list[data-visible="true"] { animation-play-state: running; }
   .partners-list:hover {
     animation-play-state: paused;
   }
@@ -545,6 +559,15 @@
     100% { transform: translateX(-50%); }
   }
 </style>
+<script>
+(function () {
+  const list = document.getElementById('partnersList');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(function (entries) {
+    list.dataset.visible = String(entries[0].isIntersecting);
+  }).observe(list.parentElement);
+})();
+</script>
 <!-- Posicionamento Section (Dark Background) -->
 <section class="py-40 bg-[#0B2430] text-white">
 <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
