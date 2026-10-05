@@ -1,6 +1,6 @@
 (function () {
   const pages = ['quem-somos', 'servicos', 'diferenciais', 'pericias', 'contato',
-    'abertura-de-empresa', 'contabilidade-eleitoral', 'reforma-tributaria', 'declaracao-ir'];
+    'abertura-de-empresa', 'trocar-de-contador', 'contabilidade-eleitoral', 'reforma-tributaria', 'declaracao-ir'];
   const path = window.location.pathname;
   const filename = path.slice(path.lastIndexOf('/') + 1);
   if (!filename.endsWith('.html')) return;

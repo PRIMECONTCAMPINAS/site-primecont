@@ -1,0 +1,32 @@
+/* Conteúdo comercial: cores e tipografia institucionais, sem alterar a navegação. */
+.service-content { padding: 80px 0; background: #fff; color: #41484c; }
+.service-content-shade { background: #f3f4f5; }
+.service-container { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+.service-content h2 { font-family: Outfit, sans-serif; font-size: clamp(1.8rem, 3.2vw, 2.6rem); line-height: 1.15; font-weight: 700; letter-spacing: -.025em; color: #002f42; margin: 0 0 28px; }
+.service-content h3 { font-family: Outfit, sans-serif; font-size: 1.35rem; font-weight: 600; color: #002f42; margin: 0 0 12px; }
+.service-content p, .service-content li { font-family: 'Work Sans', sans-serif; font-size: 1.05rem; line-height: 1.75; }
+.service-content p { margin: 0 0 20px; max-width: 75ch; }
+.service-content a { color: #10465e; text-decoration: underline; text-underline-offset: 4px; }
+.service-content a:focus-visible, .service-faq summary:focus-visible { outline: 3px solid #326572; outline-offset: 5px; }
+.service-checklist { list-style: disc; padding-left: 24px; margin: 24px 0; }
+.service-checklist li { padding: 5px 0; }
+.service-steps { counter-reset: steps; list-style: none; padding: 0; margin: 32px 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.service-steps li { counter-increment: steps; border-left: 3px solid #326572; background: #fff; padding: 28px; }
+.service-steps li::before { content: '0' counter(steps); display: block; color: #326572; font-family: Outfit, sans-serif; font-size: 1.4rem; margin-bottom: 12px; }
+.service-faq details { border-top: 1px solid #c1c7cd; padding: 22px 0; }
+.service-faq details:last-child { border-bottom: 1px solid #c1c7cd; }
+.service-faq summary { cursor: pointer; color: #002f42; font: 600 1.2rem/1.5 Outfit, sans-serif; }
+.service-faq details p { margin: 18px 0 0; }
+.service-content .service-source { font-size: .85rem; margin: 32px 0 0; }
+.service-content .service-button { display: inline-block; background: #002f42; color: #fff; padding: 16px 24px; border-radius: 8px; font-family: Outfit, sans-serif; font-weight: 600; text-decoration: none; }
+.service-hero-lead { color: #e1e3e4; font-size: 1.15rem; line-height: 1.7; margin-top: 24px; max-width: 55ch; }
+.service-timeline-note { color: #e1e3e4; font-size: 1rem; line-height: 1.7; max-width: 80ch; margin: -36px auto 40px; text-align: center; }
+.service-page .site-hero-content a { white-space: normal; }
+@media (max-width: 767px) {
+  .service-content { padding: 48px 0; }
+  .service-container { padding: 0 24px; }
+  .service-steps { grid-template-columns: 1fr; }
+  .service-page > section > div[class*='max-w-'] { padding-inline: 24px; }
+  .service-page .site-hero-content { gap: 32px; }
+  .service-page .site-hero-content h1 { font-size: 2.75rem; }
+}
