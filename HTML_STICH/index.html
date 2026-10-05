@@ -166,17 +166,17 @@
 </div>
 <a class="text-slate-600 hover:text-cyan-900 transition-colors font-headline font-medium tracking-tight" href="contato.html">Contato</a>
 </div>
-<button id="mobileMenuBtn" class="md:hidden p-2 ml-auto text-slate-600 flex items-center justify-center" aria-label="Abrir menu">
+<button id="mobileMenuBtn" aria-controls="mobileMenu" aria-expanded="false" class="md:hidden p-2 ml-auto text-slate-600 flex items-center justify-center" aria-label="Abrir menu">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </nav>
 <!-- Mobile Menu Overlay -->
-<div id="mobileMenu" class="fixed inset-0 z-[99] flex flex-col pointer-events-none">
+<div id="mobileMenu" inert class="fixed inset-0 z-[150] flex flex-col pointer-events-none">
   <!-- Backdrop -->
   <div id="mobileMenuBackdrop" class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300"></div>
   <!-- Drawer -->
-  <div id="mobileMenuDrawer" class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
+  <div id="mobileMenuDrawer" role="dialog" aria-modal="true" aria-label="Navegação do site" class="overflow-y-auto absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
     <!-- Header -->
     <div class="flex items-center justify-between px-6 py-4 border-b border-outline/10">
       <img alt="PRIMECONT" class="h-8 w-auto" src="logos/PRINCIPAL HORIZONTAL.webp"/>
@@ -192,7 +192,7 @@
       <a href="servicos.html" class="px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">Serviços</a>
       <!-- Especialidades -->
       <div>
-        <button id="mobileEspBtn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">
+        <button id="mobileEspBtn" aria-controls="mobileEspMenu" aria-expanded="false" class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">
           Especialidades
           <span id="mobileEspIcon" class="material-symbols-outlined text-lg transition-transform duration-200">expand_more</span>
         </button>
@@ -213,7 +213,7 @@
     </div>
   </div>
 </div>
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=20261005-a11y" defer></script>
 <main>
 <!-- Hero Section -->
 <section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface-container-lowest">
@@ -326,10 +326,10 @@
 <!-- Carousel Wrapper -->
 <div class="relative">
   <!-- Setas -->
-  <button id="svcPrev" class="svc-arrow absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-outline/20 flex items-center justify-center shadow-md hover:bg-surface-container transition-colors opacity-40 cursor-not-allowed" disabled>
+  <button id="svcPrev" aria-label="Ver serviços anteriores" aria-controls="svcTrack" class="svc-arrow absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-outline/20 flex items-center justify-center shadow-md hover:bg-surface-container transition-colors opacity-40 cursor-not-allowed" disabled>
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#002f42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
-  <button id="svcNext" class="svc-arrow absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-outline/20 flex items-center justify-center shadow-md hover:bg-surface-container transition-colors">
+  <button id="svcNext" aria-label="Ver próximos serviços" aria-controls="svcTrack" class="svc-arrow absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-outline/20 flex items-center justify-center shadow-md hover:bg-surface-container transition-colors">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#002f42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
   </button>
   <!-- Track -->
@@ -455,7 +455,7 @@
 <!-- Parceiros Section -->
 <section class="py-20 bg-surface-container-lowest border-t border-outline/10">
   <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <p class="text-center text-xs font-headline font-semibold uppercase tracking-[0.2em] text-on-surface-variant/50 mb-12">Tecnologia e sistemas parceiros</p>
+    <p class="text-center text-xs font-headline font-semibold uppercase tracking-[0.2em] text-on-surface-variant mb-12">Tecnologia e sistemas parceiros</p>
     <div class="partners-track-wrapper">
       <div class="partners-track">
         <div class="partners-list" id="partnersList">
@@ -651,8 +651,8 @@
 
     </div>
     <div class="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-      <p class="text-xs text-white/40">© 2026 PRIMECONT Contabilidade e Perícias. Todos os direitos reservados.</p>
-      <div class="flex gap-8 text-xs text-white/40">
+      <p class="text-xs text-white/70">© 2026 PRIMECONT Contabilidade e Perícias. Todos os direitos reservados.</p>
+      <div class="flex gap-8 text-xs text-white/70">
         <a class="hover:text-white transition-colors" href="#">Política de Privacidade</a>
         <a class="hover:text-white transition-colors" href="#">Termos de Uso</a>
       </div>

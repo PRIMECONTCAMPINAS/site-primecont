@@ -206,15 +206,15 @@
 </div>
 <a class="text-slate-600 hover:text-cyan-900 transition-colors font-headline font-medium tracking-tight" href="contato.html">Contato</a>
 </div>
-<button id="mobileMenuBtn" class="md:hidden p-2 ml-auto text-slate-600 flex items-center justify-center" aria-label="Abrir menu">
+<button id="mobileMenuBtn" aria-controls="mobileMenu" aria-expanded="false" class="md:hidden p-2 ml-auto text-slate-600 flex items-center justify-center" aria-label="Abrir menu">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </nav>
 <!-- Mobile Menu Overlay -->
-<div id="mobileMenu" class="fixed inset-0 z-[99] flex flex-col pointer-events-none">
+<div id="mobileMenu" inert class="fixed inset-0 z-[150] flex flex-col pointer-events-none">
   <div id="mobileMenuBackdrop" class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300"></div>
-  <div id="mobileMenuDrawer" class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
+  <div id="mobileMenuDrawer" role="dialog" aria-modal="true" aria-label="Navegação do site" class="overflow-y-auto absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
     <div class="flex items-center justify-between px-6 py-4 border-b border-outline/10">
       <img alt="PRIMECONT" class="h-8 w-auto" src="logos/PRINCIPAL HORIZONTAL.webp"/>
       <button id="mobileMenuClose" class="p-2 text-slate-500 hover:text-slate-800 transition-colors" aria-label="Fechar menu">
@@ -227,7 +227,7 @@
       <a href="abertura-de-empresa.html" class="px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">Abrir Empresa</a>
       <a href="servicos.html" class="px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">Serviços</a>
       <div>
-        <button id="mobileEspBtn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">
+        <button id="mobileEspBtn" aria-controls="mobileEspMenu" aria-expanded="false" class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-slate-700 hover:bg-surface-container-low hover:text-cyan-900 font-headline font-medium transition-colors">
           Especialidades
           <span id="mobileEspIcon" class="material-symbols-outlined text-lg transition-transform duration-200">expand_more</span>
         </button>
@@ -247,7 +247,7 @@
     </div>
   </div>
 </div>
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=20261005-a11y" defer></script>
 <main class="pt-0">
 <!-- Hero Section: Clifford Chance Style -->
 <section class="relative min-h-[716px] flex items-center overflow-hidden bg-primary overflow-hidden">
@@ -539,7 +539,7 @@
 
       <!-- Navegação -->
       <div class="space-y-6">
-        <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-[#9bcfdd]">Navegação</h4>
+        <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-[#9bcfdd]">Navegação</h2>
         <ul class="space-y-3 text-sm text-white/60">
           <li><a class="hover:text-white transition-colors" href="./">Início</a></li>
           <li><a class="hover:text-white transition-colors" href="quem-somos.html">Quem Somos</a></li>
@@ -552,7 +552,7 @@
 
       <!-- Especialidades -->
       <div class="space-y-6">
-        <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-[#9bcfdd]">Especialidades</h4>
+        <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-[#9bcfdd]">Especialidades</h2>
         <ul class="space-y-3 text-sm text-white/60">
           <li><a class="hover:text-white transition-colors" href="abertura-de-empresa.html">Abertura de Empresa</a></li>
           <li><a class="hover:text-white transition-colors" href="contabilidade-eleitoral.html">Contabilidade Eleitoral</a></li>
@@ -563,7 +563,7 @@
 
       <!-- Contato -->
       <div class="space-y-6">
-        <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-[#9bcfdd]">Contato</h4>
+        <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-[#9bcfdd]">Contato</h2>
         <ul class="space-y-4 text-sm text-white/60">
           <li class="flex items-center gap-3">
             <span class="material-symbols-outlined text-base text-[#9bcfdd]">call</span>
@@ -582,8 +582,8 @@
 
     </div>
     <div class="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-      <p class="text-xs text-white/40">© 2026 PRIMECONT Contabilidade e Perícias. Todos os direitos reservados.</p>
-      <div class="flex gap-8 text-xs text-white/40">
+      <p class="text-xs text-white/70">© 2026 PRIMECONT Contabilidade e Perícias. Todos os direitos reservados.</p>
+      <div class="flex gap-8 text-xs text-white/70">
         <a class="hover:text-white transition-colors" href="#">Política de Privacidade</a>
         <a class="hover:text-white transition-colors" href="#">Termos de Uso</a>
       </div>
