@@ -64,7 +64,8 @@ Ao realizar qualquer alteração, o agente de IA **DEVE** respeitar as seguintes
 
 ### B. URLs Limpas e Links Relativos
 1. **Página Inicial:** Use sempre links relativos de raiz: `href="./"` (nunca `href="home-page.html"` nem `href="index.html"`).
-2. **Páginas Internas:** Use `href="servicos.html"`, `href="quem-somos.html"`, etc.
+2. **Páginas Internas:** Use URLs sem extensão e sem barra final: `href="servicos"`, `href="quem-somos"`, etc. Os arquivos-fonte continuam sendo `servicos.html`, `quem-somos.html` em `HTML_STICH/`; o GitHub Pages atende os caminhos sem extensão. Ao validar um link local sem extensão, confira o arquivo correspondente com `.html`.
+   **Endereços antigos:** `js/urls.js` encaminha no navegador os endereços `.html` conhecidos para a URL sem extensão, preservando parâmetros e fragmentos. Mantenha esse script no head das páginas comerciais. É um encaminhamento JavaScript, não uma regra HTTP 301.
 3. **Preservação do CNAME:** O arquivo `HTML_STICH/CNAME` **nunca deve ser deletado** em produção, pois ele mantém o domínio `www.primecont.cnt.br` conectado ao GitHub Pages.
 
 ### C. Identidade Visual e Favicon
@@ -80,7 +81,7 @@ Ao realizar qualquer alteração, o agente de IA **DEVE** respeitar as seguintes
 Em todas as páginas HTML, mantenha preenchidos:
 * `<title>` descritivo e alinhado com a marca.
 * `<meta name="description" content="...">`
-* `<link rel="canonical" href="https://www.primecont.cnt.br/[pagina].html"/>`
+* `<link rel="canonical" href="https://www.primecont.cnt.br/[pagina]"/>` (home: `/`). Use a mesma URL sem extensão em `og:url`, JSON-LD e sitemap.
 * Tags Open Graph (`og:title`, `og:description`, `og:image`, `og:url`).
 
 ---
