@@ -76,6 +76,7 @@ Ao realizar qualquer alteração, o agente de IA **DEVE** respeitar as seguintes
    ```
 2. **Logo Superior e Rodapé:** A logo principal deve sempre carregar de `logos/PRINCIPAL HORIZONTAL.webp` com `alt="PRIMECONT"`.
 3. **Estilização:** O site utiliza utilitários Tailwind CSS via CDN e tipografias do Google Fonts (`Outfit`, `Plus Jakarta Sans`, `Work Sans`). Mantenha a harmonia das cores institucionais (tons de azul Primecont, ardósia e superfícies claras).
+   **Topbar:** Preserve `css/navigation.css` nas dez páginas comerciais: ele padroniza a geometria e usa fonte do sistema para estabilizar o menu durante o carregamento. O menu desktop começa em 1024px; sincronize esse breakpoint com `js/main.js`. A barra sticky já ocupa espaço no fluxo: o main começa sem padding superior compensatório.
 
 ### D. SEO e Meta Tags
 Em todas as páginas HTML, mantenha preenchidos:
