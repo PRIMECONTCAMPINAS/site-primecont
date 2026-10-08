@@ -62,10 +62,10 @@ body > .site-main { padding-top: 0; }
 /* Acesso ao portal: destaque discreto nos menus desktop e celular. */
 .site-header .site-desktop-nav > a[href="https://visao.gclick.com.br/primecont"],
 #mobileMenuDrawer nav > a[href="https://visao.gclick.com.br/primecont"] {
-  border: 1px solid #b8d3dc;
+  border: 1px solid #10465e;
   border-radius: 8px;
-  background: #f5f9fa;
-  color: #164e63;
+  background: #10465e;
+  color: #fff;
   font-weight: 600;
   transition: background-color .2s, border-color .2s, color .2s;
 }
@@ -74,8 +74,8 @@ body > .site-main { padding-top: 0; }
 }
 .site-header .site-desktop-nav > a[href="https://visao.gclick.com.br/primecont"]:hover,
 #mobileMenuDrawer nav > a[href="https://visao.gclick.com.br/primecont"]:hover {
-  background: #eaf3f6;
-  border-color: #78a8ba;
+  background: #0b2430;
+  border-color: #0b2430;
 }
 .site-header .site-desktop-nav > a[href="https://visao.gclick.com.br/primecont"]:focus-visible,
 #mobileMenuDrawer nav > a[href="https://visao.gclick.com.br/primecont"]:focus-visible {
