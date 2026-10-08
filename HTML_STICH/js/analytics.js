@@ -57,19 +57,19 @@
   document.body.appendChild(box);
   box.hidden = choice === 'accepted' || choice === 'denied';
   box.querySelector('[data-pc="accept"]').addEventListener('click', () => {
-    remember('accepted'); box.hidden = true; start(); preferences.focus();
+    remember('accepted'); box.hidden = true; start(); preferences.focus({preventScroll: true});
   });
   box.querySelector('[data-pc="deny"]').addEventListener('click', () => {
     remember('denied'); box.hidden = true; window[disabled] = true;
     removeCookies();
-    if (active) location.reload(); else preferences.focus();
+    if (active) location.reload(); else preferences.focus({preventScroll: true});
   });
   const preferences = document.createElement('button');
   preferences.type = 'button';
   preferences.className = 'pc-medicao-preferencias';
   preferences.textContent = 'Preferências de medição';
   preferences.addEventListener('click', () => {
-    box.hidden = false; box.querySelector('[data-pc="accept"]').focus();
+    box.hidden = false; box.querySelector('[data-pc="accept"]').focus({preventScroll: true});
   });
   const controls = document.createElement('div');
   controls.className = 'pc-medicao-rodape';
