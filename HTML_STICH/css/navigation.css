@@ -54,3 +54,7 @@ body > .site-main { padding-top: 0; }
   .site-header .site-desktop-nav { display: flex; }
   .site-header #mobileMenuBtn { display: none; }
 }
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .site-header .site-desktop-nav { gap: 20px; }
+}
